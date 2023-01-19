@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: manrope;
+
+}
+
+@font-face {
+    font-family: manrope;
+    src: url(/assets/fonts/Manrope-Regular.ttf);
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import "shopitem";
+@import "productos";
+@import "variables";
+@import "extend";
+@import "header";
+@import "main";
+@import "footer";

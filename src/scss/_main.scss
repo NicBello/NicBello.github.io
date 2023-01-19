@@ -1,0 +1,242 @@
+main{
+
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+
+    .index__main__banner{
+        width: 100%;
+        height: 100%;
+        background-image: url(/assets/img/mountain_peak_tourists_148482_1920x1080.jpg);
+        background-size: cover;
+        background-position: center;
+
+        
+
+    }
+
+    .index__main__banner{
+         display: flex;
+         align-items: center;
+         height: 75vh;
+        
+
+        .banner__text{
+            width: 100%;
+            text-align: center;
+        
+            h1{
+                font-family:transducer;
+                color: white;
+                font-size: 26px;
+                margin-bottom: 50px;
+
+                @media (min-width: 768px){
+                    font-size: 32px;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+
+
+    .index__section__items{
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+       a{
+        width: 46%;
+       }
+
+        .items__tarjetas{
+
+            
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: 5px;
+            position: relative;
+            overflow: hidden;
+            
+            @media (min-width: 600px){
+                height: 300px;
+            }
+
+            @media (min-width: 768px){
+                width: 30%;
+            }
+
+            @media (min-width: 1200px){
+                width: 15%;
+                height: 250px;
+               
+            }
+           
+
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                &:hover {
+                    height: 100%;
+                    max-width: 100%;
+                    transform:scale(1.15);
+                    transition: (0.5s);
+                    filter:brightness(70%)
+                }
+                
+            }
+
+            h2{
+                font-size: 1.2rem;
+                position: absolute;
+                top: 40%;
+                color: white;
+                padding: 0px 5px 5px;
+            }
+        }
+    }
+
+    .index__section__generos{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (min-width: 768px){
+            justify-content: center;
+            
+        }
+
+        a{
+            width: 100%;
+            height: 270px;
+            display: flex;
+            justify-content: center;
+            margin: 5px 0px;
+            
+        }
+
+        
+
+        .generos__box{
+            
+            margin: 5px 0px;
+            width: 100%;
+            height: 270px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            
+            
+
+            @media (min-width: 768px){
+                width: 70%;
+                
+            }
+             
+            
+                
+                
+            }
+           
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                &:hover {
+                        height: 100%;
+                        transform:scale(1.15);
+                        transition: (0.5s);
+                }
+
+               @media (min-width: 1200px){
+                object-position: 100%;
+               }
+
+                
+            }
+
+            
+            h2{
+                color: white;
+                position: absolute;
+                top: 50%;
+                font-size: 2rem;
+                
+                
+            }
+
+
+    
+    
+           
+        }
+
+        
+    }
+
+
+    .section__envios{
+        margin-top: 30px;
+        width: 100%;
+
+        background-color: $color2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        .envios_icontextbox{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            @media (min-width: 768px){
+                width: 25%;
+            }
+            
+
+        }
+        
+        p{
+            font-size: 13.5px;
+            padding-top: 5px;
+
+            @media (min-width: 600px){
+    
+                padding: 5px 25px;
+
+            }
+            
+            @media (min-width: 768px){
+               padding: 5px 0px;
+            }
+            
+        }
+
+        i{
+            font-size: 35px;
+            padding: 15px;
+            color: whitesmoke;
+
+            
+        }
+
+       
+}
+
+
+
+

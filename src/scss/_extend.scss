@@ -1,0 +1,8 @@
+%button {
+
+    background-color: map-get($button , fondo);
+    color: map-get($button , letra);
+    padding: map-get($button , padding);
+    border: map-get($button , border);
+
+};

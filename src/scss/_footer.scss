@@ -1,0 +1,242 @@
+footer{
+    grid-area: footer;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/img/Desierto\ de\ Atacama.jpg);
+    background-size: cover;
+    align-items: center;
+
+    @media (min-width: 1200px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    
+        .footer__nav{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (min-width: 480px){
+                
+                padding: 0px 90px;
+            }
+
+            @media (min-width: 600px){
+                
+                padding: 120px;
+            }
+
+            @media (min-width: 600px){
+                
+                padding: 80px 120px;
+            }
+
+            @media (min-width: 768px){
+                
+                padding: 80px 0px;
+            }
+
+            @media (min-width: 1200px){
+                width: 30%;
+                
+                
+            }
+
+            
+            
+            
+            ul{
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                    text-decoration: none;
+                }
+                li{
+                    list-style: none;
+                    color: white;
+                    padding: 20px;
+                    font-size: 13px;
+
+                    @media (min-width: 480px){
+                        font-size: 14px;
+                        
+                    }
+
+                    @media (min-width: 768px){
+                        font-size: 16px;
+                        
+                    }
+                   
+                    
+                    
+                    
+
+                }
+            }
+
+            }
+
+
+            .suscripcion{
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                margin: 10px;
+                width: 80%;
+                height: auto;
+                font-size: 15px;
+                text-align: center;
+                color: white;
+                padding: 10px;
+                align-items: center;
+
+                @media (min-width: 480px){
+                    width: 60%;
+                }
+
+                @media (min-width: 600px){
+                    width: 50%;
+                }
+
+
+                @media (min-width: 768px){
+                    width: 40%;
+                }
+                
+                @media (min-width: 1200px){
+                    height: auto;
+                    width: 35%;
+                    border: none;
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                }
+
+                input{
+                    margin-top: 10px;
+                    padding: 5px;
+                     &:focus{
+                        outline: none;
+                        }
+
+                    @media (min-width: 1200px){
+                        width: 80%;
+                    }
+                    
+                     
+                   }
+            
+
+                   .btn{
+                        @extend %button;
+                        margin-top: 10px;
+
+                        @media (min-width: 1200px){
+                            width: 80%;
+                        }
+                   }
+             }
+
+            
+
+            
+            
+                
+            }
+
+            .footer__socialbox{
+                width: 80%;
+                height: 10%;
+                display: flex;
+                color: white;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 22px;
+                
+
+                @media (min-width: 480px){
+                    width: 60%;
+                }
+
+                @media (min-width: 768px){
+                    width: 40%;
+                }
+
+                @media (min-width: 1200px){
+                    width: 30%;
+                    padding: 0px 50px;
+                }
+        
+             }
+
+             .footer__copyright{
+                width: 100%;
+                height: 15%;
+                padding: 10px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                text-align: center;
+                justify-content: center;
+
+                @media (min-width: 480px){
+                    width: 80%;
+                }
+
+                @media (min-width: 1200px){
+                    width: 100%;
+                    
+
+                   
+                }
+                
+                
+
+                a{
+                    color: white;
+                }
+
+                
+        
+             }
+        
+
+             .btn__arrepentimiento{
+
+                display: flex;
+                
+                
+
+                .btn-1{
+                    @extend %button;
+                    background-color: #D67A13;
+                    margin-bottom: 15px;
+                    
+                    @media (min-width: 1200px){
+                        margin: 0;
+                    }
+
+                    
+                }   
+
+             }
+             
+             
+        
+
+
+
+
+
+
+
+
+                

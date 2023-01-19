@@ -1,0 +1,736 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: manrope;
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(/assets/fonts/Manrope-Regular.ttf);
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.title__producto__shop {
+  border: solid green;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+}
+.title__producto__shop h1 {
+  font-size: 22px;
+  padding: 14px;
+  align-self: center;
+}
+
+.opiniones__textbox__shop {
+  width: 100%;
+}
+.opiniones__textbox__shop a {
+  font-size: 13px;
+}
+
+.img__box__shop {
+  width: 100%;
+  height: 320;
+}
+.img__box__shop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 8px;
+}
+
+.price__description__shop {
+  padding: 15px;
+}
+.price__description__shop span {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 6px 20px;
+  background-color: #D67A13;
+  width: 25%;
+  border-radius: 3px;
+  color: rgb(241, 241, 241);
+}
+.price__description__shop .textbox__description__price {
+  display: flex;
+  text-align: left;
+  font-size: 15px;
+}
+.price__description__shop .opiniones__container__shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.price__description__shop .opiniones__container__shop div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price__description__shop .opiniones__container__shop div i {
+  font-size: 20px;
+}
+.price__description__shop .opiniones__container__shop div a {
+  font-size: 12px;
+}
+.price__description__shop .opiniones__container__shop div .starbox__product {
+  margin-right: 20px;
+}
+
+.color__size__shop {
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.color__size__shop .colorselec__box {
+  margin-bottom: 10px;
+  border: solid blue;
+  display: flex;
+  align-items: center;
+}
+.color__size__shop .colorselec__box h2 {
+  font-size: 14px;
+}
+.color__size__shop .colorselec__box span {
+  font-size: 14px;
+  padding: 0px 10px;
+}
+.color__size__shop .imgboxselec {
+  border: solid violet;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.color__size__shop .imgboxselec img {
+  border: solid red;
+  width: 50px;
+  height: 50px;
+  margin: 0px 8px;
+}
+
+main {
+  display: flex;
+}
+main .producto__main__banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+main .producto__main__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+main .producto__main__banner h3 {
+  position: absolute;
+  top: 40%;
+  font-size: 30px;
+}
+main .producto__filtrarbox {
+  display: flex;
+  width: 52%;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+  align-items: center;
+  background-color: #fcfcfc;
+  border: solid 2px #000000;
+}
+main .producto__filtrarbox i {
+  font-size: 20px;
+  padding: 8px;
+}
+main .producto__filtrarbox button {
+  width: 100%;
+  border: none;
+  color: #3A5363;
+  padding: 11px;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+main .producto__order {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .producto__order .tarjeta__item {
+  width: 46%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  font-size: 13px;
+  border: 1px solid lightgray;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(50, 50, 51, 0.4);
+}
+main .producto__order .tarjeta__item .centerbox {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+main .producto__order .tarjeta__item .centerbox h3 {
+  font-size: 13px;
+  padding: 3px 0px;
+}
+main .producto__order .tarjeta__item .centerbox p {
+  font-size: 12px;
+  color: rgb(103, 103, 103);
+}
+main .producto__order .tarjeta__item .centerbox .price {
+  font-size: 13px;
+  padding: 3px 0px;
+  color: black;
+}
+main .producto__order .tarjeta__item .centerbox .btn {
+  margin: 3px 0px;
+  background-color: #3A5363;
+  padding: 5px;
+  border: none;
+  color: white;
+  font-size: 12px;
+  border-radius: 3px;
+}
+main .producto__order .tarjeta__item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+main .container__nextpages {
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  font-size: 12px;
+  align-self: center;
+}
+main .container__nextpages .margin-right {
+  border-right: solid black 1px;
+  height: 100%;
+  align-items: center;
+}
+main .container__nextpages div {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+main .container__nextpages ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+main .container__nextpages ul .current {
+  background-color: #D67A13;
+}
+main .container__nextpages ul .current a {
+  color: white;
+}
+main .container__nextpages ul li {
+  padding: 11px;
+  height: 100%;
+  border-right: 1px black solid;
+}
+main .container__nextpages ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn__arrepentimiento .btn-1, footer .suscripcion .btn {
+  background-color: #3A5363;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+header {
+  grid-area: header;
+}
+header .header__nav {
+  display: flex;
+  width: 100%;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  header .header__nav {
+    padding: 0px 40px;
+  }
+}
+header .header__nav ul {
+  list-style: none;
+  display: none;
+}
+@media (min-width: 1200px) {
+  header .header__nav ul {
+    display: flex;
+  }
+}
+header .header__nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+}
+header .header__nav i {
+  font-size: 22px;
+}
+@media (min-width: 480px) {
+  header .header__nav i {
+    font-size: 27px;
+  }
+}
+header .header__nav .container__icons {
+  display: none;
+  justify-content: space-between;
+  width: 120px;
+}
+@media (min-width: 1200px) {
+  header .header__nav .container__icons {
+    display: flex;
+  }
+}
+header .header__nav .hamburguesa {
+  width: 20%;
+  padding-left: 8px;
+}
+@media (min-width: 480px) {
+  header .header__nav .hamburguesa {
+    width: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  header .header__nav .hamburguesa {
+    display: none;
+  }
+}
+header .header__nav .container__hamburguesa-lupa {
+  display: flex;
+  justify-content: space-between;
+  width: 55px;
+}
+@media (min-width: 480px) {
+  header .header__nav .container__hamburguesa-lupa {
+    width: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  header .header__nav .container__hamburguesa-lupa {
+    display: none;
+  }
+}
+header .nav__logobox {
+  width: 118px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+header .nav__logobox img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+main .index__main__banner {
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/img/mountain_peak_tourists_148482_1920x1080.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main .index__main__banner {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+}
+main .index__main__banner .banner__text {
+  width: 100%;
+  text-align: center;
+}
+main .index__main__banner .banner__text h1 {
+  font-family: transducer;
+  color: white;
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  main .index__main__banner .banner__text h1 {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+}
+main .index__section__items {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .index__section__items a {
+  width: 46%;
+}
+main .index__section__items .items__tarjetas {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 600px) {
+  main .index__section__items .items__tarjetas {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  main .index__section__items .items__tarjetas {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  main .index__section__items .items__tarjetas {
+    width: 15%;
+    height: 250px;
+  }
+}
+main .index__section__items .items__tarjetas img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main .index__section__items .items__tarjetas img:hover {
+  height: 100%;
+  max-width: 100%;
+  transform: scale(1.15);
+  transition: 0.5s;
+  filter: brightness(70%);
+}
+main .index__section__items .items__tarjetas h2 {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 40%;
+  color: white;
+  padding: 0px 5px 5px;
+}
+main .index__section__generos {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  main .index__section__generos {
+    justify-content: center;
+  }
+}
+main .index__section__generos a {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px;
+}
+main .index__section__generos .generos__box {
+  margin: 5px 0px;
+  width: 100%;
+  height: 270px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  main .index__section__generos .generos__box {
+    width: 70%;
+  }
+}
+main .index__section__generos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .index__section__generos img:hover {
+  height: 100%;
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+@media (min-width: 1200px) {
+  main .index__section__generos img {
+    object-position: 100%;
+  }
+}
+main .index__section__generos h2 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+}
+
+.section__envios {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #3A5363;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+.section__envios .envios_icontextbox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .section__envios .envios_icontextbox {
+    width: 25%;
+  }
+}
+.section__envios p {
+  font-size: 13.5px;
+  padding-top: 5px;
+}
+@media (min-width: 600px) {
+  .section__envios p {
+    padding: 5px 25px;
+  }
+}
+@media (min-width: 768px) {
+  .section__envios p {
+    padding: 5px 0px;
+  }
+}
+.section__envios i {
+  font-size: 35px;
+  padding: 15px;
+  color: whitesmoke;
+}
+
+footer {
+  grid-area: footer;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/img/Desierto\ de\ Atacama.jpg);
+  background-size: cover;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+footer .footer__nav {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  footer .footer__nav {
+    padding: 0px 90px;
+  }
+}
+@media (min-width: 600px) {
+  footer .footer__nav {
+    padding: 120px;
+  }
+}
+@media (min-width: 600px) {
+  footer .footer__nav {
+    padding: 80px 120px;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer__nav {
+    padding: 80px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer__nav {
+    width: 30%;
+  }
+}
+footer .footer__nav ul {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer__nav ul a {
+  text-decoration: none;
+}
+footer .footer__nav ul li {
+  list-style: none;
+  color: white;
+  padding: 20px;
+  font-size: 13px;
+}
+@media (min-width: 480px) {
+  footer .footer__nav ul li {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer__nav ul li {
+    font-size: 16px;
+  }
+}
+footer .suscripcion {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 10px;
+  width: 80%;
+  height: auto;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  footer .suscripcion {
+    width: 60%;
+  }
+}
+@media (min-width: 600px) {
+  footer .suscripcion {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  footer .suscripcion {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  footer .suscripcion {
+    height: auto;
+    width: 35%;
+    border: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+}
+footer .suscripcion input {
+  margin-top: 10px;
+  padding: 5px;
+}
+footer .suscripcion input:focus {
+  outline: none;
+}
+@media (min-width: 1200px) {
+  footer .suscripcion input {
+    width: 80%;
+  }
+}
+footer .suscripcion .btn {
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  footer .suscripcion .btn {
+    width: 80%;
+  }
+}
+
+.footer__socialbox {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+}
+@media (min-width: 480px) {
+  .footer__socialbox {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .footer__socialbox {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__socialbox {
+    width: 30%;
+    padding: 0px 50px;
+  }
+}
+
+.footer__copyright {
+  width: 100%;
+  height: 15%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  text-align: center;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  .footer__copyright {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__copyright {
+    width: 100%;
+  }
+}
+.footer__copyright a {
+  color: white;
+}
+
+.btn__arrepentimiento {
+  display: flex;
+}
+.btn__arrepentimiento .btn-1 {
+  background-color: #D67A13;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .btn__arrepentimiento .btn-1 {
+    margin: 0;
+  }
+}

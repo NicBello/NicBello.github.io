@@ -1,0 +1,114 @@
+header{
+    grid-area: header;
+    .header__nav{
+        display: flex;
+        width: 100%;
+        padding: 0px 10px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        
+        
+
+        @media (min-width: 1200px){
+            padding: 0px 40px;
+            
+            
+        }
+
+        ul{
+            list-style: none;
+            display: none;
+
+            @media (min-width: 1200px){
+                display: flex;
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+                padding: 20px;
+                font-size: 16px;
+            }
+
+            
+            
+        }
+
+
+        i{
+            font-size: 22px;
+            
+            @media (min-width: 480px){
+                font-size: 27px;
+            }
+
+           
+        }
+
+        .container__icons{
+            display: none;
+            justify-content: space-between;
+            width: 120px;
+
+            @media (min-width: 1200px){
+                display: flex;
+            }
+            
+
+        }
+
+        .hamburguesa{
+            width: 20%;
+            padding-left: 8px;
+
+            @media (min-width: 480px){
+                width: 70px;
+            }
+
+            @media (min-width: 1200px){
+                display: none;
+            }
+        }
+
+        .container__hamburguesa-lupa{
+            display: flex;
+            justify-content: space-between;
+            width: 55px;
+            
+            @media (min-width: 480px){
+                width: 70px;
+            }
+
+            @media (min-width: 1200px){
+                display: none;
+            }
+
+        }
+        
+    }
+    .nav__logobox{
+        width: 118px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+      
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          
+           
+            
+        }
+    }
+    
+   
+    
+}
+

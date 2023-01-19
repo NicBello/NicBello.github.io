@@ -1,0 +1,138 @@
+.title__producto__shop{
+    border: solid green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    
+        h1{
+            font-size: 22px;
+            padding: 14px;
+            align-self: center;
+
+        }
+    }
+    
+
+    .opiniones__textbox__shop{
+        width: 100%;
+        a{
+            font-size: 13px;
+            
+        }
+    }
+
+    .img__box__shop{
+        width: 100%;
+        height: 320;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 8px;
+        }
+    }
+
+    .price__description__shop{
+       
+        padding: 15px;    
+
+        span{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+
+            align-items: center;    
+            
+            justify-content: center;
+            font-size: 18px;
+            padding: 6px 20px;
+            background-color: #D67A13;
+            width: 25%;
+            border-radius: 3px;
+            color: rgb(241, 241, 241);
+        }
+
+        .textbox__description__price{
+    
+            display: flex;
+            text-align: left;
+            font-size: 15px;
+        }
+
+
+
+
+
+        .opiniones__container__shop{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+             div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                i{
+                    font-size: 20px;
+                }
+        
+                a{
+                     font-size: 12px;
+                     
+              }
+    
+                .starbox__product{
+                    margin-right: 20px;
+                }
+            }
+               
+    
+            }
+    }
+
+
+    .color__size__shop{
+        border: solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        
+        
+
+        .colorselec__box{
+            margin-bottom: 10px;
+            border: solid blue;
+            display: flex;
+            align-items: center;
+
+            h2{
+                font-size: 14px;
+            }
+
+            span{
+                font-size: 14px;
+                padding: 0px 10px;
+            }
+
+        }
+
+        .imgboxselec{
+
+            border: solid violet;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            img{
+                border: solid red;
+                width: 50px;
+                height: 50px;
+                margin: 0px 8px;
+                
+                
+            }
+        }
+        
+        
+    }
