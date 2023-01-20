@@ -27,29 +27,26 @@ body {
   padding: 14px;
   align-self: center;
 }
-
-.opiniones__textbox__shop {
+.title__producto__shop .opiniones__textbox__shop {
   width: 100%;
 }
-.opiniones__textbox__shop a {
+.title__producto__shop .opiniones__textbox__shop a {
   font-size: 13px;
 }
-
-.img__box__shop {
+.title__producto__shop .img__box__shop {
   width: 100%;
   height: 320;
 }
-.img__box__shop img {
+.title__producto__shop .img__box__shop img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   padding: 8px;
 }
-
-.price__description__shop {
+.title__producto__shop .price__description__shop {
   padding: 15px;
 }
-.price__description__shop span {
+.title__producto__shop .price__description__shop span {
   margin-top: 15px;
   margin-bottom: 15px;
   display: flex;
@@ -62,82 +59,96 @@ body {
   border-radius: 3px;
   color: rgb(241, 241, 241);
 }
-.price__description__shop .textbox__description__price {
+.title__producto__shop .price__description__shop .textbox__description__price {
   display: flex;
   text-align: left;
   font-size: 15px;
 }
-.price__description__shop .opiniones__container__shop {
+.title__producto__shop .price__description__shop .opiniones__container__shop {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.price__description__shop .opiniones__container__shop div {
+.title__producto__shop .price__description__shop .opiniones__container__shop div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.price__description__shop .opiniones__container__shop div i {
+.title__producto__shop .price__description__shop .opiniones__container__shop div i {
   font-size: 20px;
 }
-.price__description__shop .opiniones__container__shop div a {
+.title__producto__shop .price__description__shop .opiniones__container__shop div a {
   font-size: 12px;
 }
-.price__description__shop .opiniones__container__shop div .starbox__product {
+.title__producto__shop .price__description__shop .opiniones__container__shop div .starbox__product {
   margin-right: 20px;
 }
-
-.color__size__shop {
+.title__producto__shop .description__shop {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 235, 235);
+  text-align: start;
+  padding: 15px;
+}
+.title__producto__shop .description__shop div {
+  margin: 5px 0px;
+}
+.title__producto__shop .color__size__shop {
   display: flex;
   flex-direction: column;
   padding: 15px;
+  width: 100%;
 }
-.color__size__shop .colorselec__box {
+.title__producto__shop .color__size__shop .colorselec__box {
   display: flex;
   align-items: center;
   font-size: 13px;
 }
-.color__size__shop .colorselec__box span {
+.title__producto__shop .color__size__shop .colorselec__box span {
   padding-right: 20px;
 }
-.color__size__shop .imgboxselec {
+.title__producto__shop .color__size__shop .imgboxselec {
   margin-top: 15px;
   display: flex;
   width: 100%;
   justify-content: center;
 }
-.color__size__shop .imgboxselec img {
+.title__producto__shop .color__size__shop .imgboxselec img {
   border: solid red;
   width: 50px;
   height: 50px;
   margin: 0px 8px;
 }
-.color__size__shop .talle__spanbox {
+.title__producto__shop .color__size__shop .talle__spanbox {
   display: flex;
   margin: 8px 0px;
 }
-.color__size__shop .talle__shop {
+.title__producto__shop .color__size__shop .talle__shop {
   font-size: 13px;
   margin-top: 15px;
 }
-.color__size__shop .talle__shop .talle__boxselect {
+.title__producto__shop .color__size__shop .talle__shop .talle__boxselect {
   text-align: left;
 }
-.color__size__shop .talle__shop .talle__boxselect a {
+.title__producto__shop .color__size__shop .talle__shop .talle__boxselect a {
   text-decoration: none;
   color: black;
 }
-.color__size__shop .talle__shop .talle__boxselect .qt {
+.title__producto__shop .color__size__shop .talle__shop .talle__boxselect .qt {
   margin-top: 18px;
   text-decoration: underline;
 }
-.color__size__shop .talle__shop .talle__boxselect ul {
+.title__producto__shop .color__size__shop .talle__shop .talle__boxselect ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   width: 100%;
 }
-.color__size__shop .talle__shop .talle__boxselect ul li {
+.title__producto__shop .color__size__shop .talle__shop .talle__boxselect ul li {
   border: solid 2px #d6d6d6;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -147,25 +158,24 @@ body {
   align-items: center;
   justify-content: center;
 }
-.color__size__shop .talle__shop .talle__boxselect ul li:hover {
+.title__producto__shop .color__size__shop .talle__shop .talle__boxselect ul li:hover {
   border: solid 2px #D67A13;
 }
-.color__size__shop .btn__shop {
+.title__producto__shop .color__size__shop .btn__shop {
   margin-top: 10px;
   display: flex;
   width: 100%;
   height: 40px;
 }
-.color__size__shop .btn__shop button {
+.title__producto__shop .color__size__shop .btn__shop button {
   width: 100%;
-  background-color: #D67A13;
+  background-color: #3A5363;
   color: rgb(255, 255, 255);
   border: none;
   font-size: 14px;
   border-radius: 4px;
 }
-
-.envios__Shop {
+.title__producto__shop .envios__Shop {
   font-size: 13px;
   font-weight: bolder;
   display: flex;
@@ -173,22 +183,27 @@ body {
   background-color: rgba(225, 225, 225, 0.919);
   text-align: start;
 }
-.envios__Shop .box__ship {
+.title__producto__shop .envios__Shop .box__ship {
   margin: 10px;
   display: flex;
   align-items: center;
+  font-weight: 500;
 }
-.envios__Shop .box__ship i {
+.title__producto__shop .envios__Shop .box__ship i {
   font-size: 19px;
   padding-right: 10px;
 }
-.envios__Shop .box__ship a {
+.title__producto__shop .envios__Shop .box__ship a {
   color: black;
   font-weight: 600;
 }
-.envios__Shop .box__ship span {
+.title__producto__shop .envios__Shop .box__ship span {
   color: rgb(46, 46, 46);
-  font-weight: 500;
+}
+
+.other__product {
+  width: 100%;
+  margin-top: 20px;
 }
 
 main {
@@ -385,7 +400,7 @@ header .header__nav .container__icons {
   }
 }
 header .header__nav .hamburguesa {
-  width: 20%;
+  width: 55px;
   padding-left: 8px;
 }
 @media (min-width: 480px) {

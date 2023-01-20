@@ -10,242 +10,257 @@
             align-self: center;
 
         }
-    }
-    
-
-    .opiniones__textbox__shop{
-        width: 100%;
-        a{
-            font-size: 13px;
-            
-        }
-    }
-
-    .img__box__shop{
-        width: 100%;
-        height: 320;
-        img{
+        .opiniones__textbox__shop{
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            padding: 8px;
+            a{
+                font-size: 13px;
+                
+            }
         }
-    }
-
-    .price__description__shop{
-       
-        padding: 15px;    
-
-        span{
-            margin-top: 15px;
-            margin-bottom: 15px;
-            display: flex;
-
-            align-items: center;    
-            
-            justify-content: center;
-            font-size: 18px;
-            padding: 6px 20px;
-            background-color: #D67A13;
-            width: 25%;
-            border-radius: 3px;
-            color: rgb(241, 241, 241);
-        }
-
-        .textbox__description__price{
     
-            display: flex;
-            text-align: left;
-            font-size: 15px;
+        .img__box__shop{
+            width: 100%;
+            height: 320;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                padding: 8px;
+            }
         }
-
-
-
-
-
-        .opiniones__container__shop{
-           
+    
+        .price__description__shop{
+            
+            padding: 15px;   
+            span{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+    
+                align-items: center;    
+                
+                justify-content: center;
+                font-size: 18px;
+                padding: 6px 20px;
+                background-color: #D67A13;
+                width: 25%;
+                border-radius: 3px;
+                color: rgb(241, 241, 241);
+            }
+    
+            .textbox__description__price{
+        
+                display: flex;
+                text-align: left;
+                font-size: 15px;
+            }
+    
+    
+    
+    
+    
+            .opiniones__container__shop{
+               
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                 div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                    i{
+                        font-size: 20px;
+                    }
+            
+                    a{
+                         font-size: 12px;
+                         
+                  }
+        
+                    .starbox__product{
+                        margin-right: 20px;
+                    }
+                }
+                   
+        
+                }
+        }
+    
+        .description__shop{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-             div{
+            background-color: rgb(235, 235, 235);
+            text-align: start;
+            padding: 15px;
+
+            div{
+                margin: 5px 0px;
+            }
+            
+            
+        }
+
+        .color__size__shop{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 100%;
+           
+           
+            
+            
+    
+            .colorselec__box{
+                display: flex;
+                align-items: center;                
+                font-size: 13px;
+
+                span{
+                    padding-right: 20px;
+                }
+    
+            }
+    
+            .imgboxselec{
+    
+                margin-top: 15px;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                img{
+                    border: solid red;
+                    width: 50px;
+                    height: 50px;
+                    margin: 0px 8px;
+                    
+                }
+            }
+    
+            .talle__spanbox{
+                display: flex;
+                margin: 8px 0px;
+            }
+    
+            .talle__shop{
+                font-size: 13px;
+                margin-top: 15px;
+    
+                .talle__boxselect{
+                    text-align: left;
+                   
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        
+                    }
+    
+                    .qt{
+                    
+                        
+                        margin-top: 18px;
+                        text-decoration: underline;
+                        
+                    }
+                    
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        
+                        li{
+                            
+                            border: solid 2px #d6d6d6;
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            &:hover{
+                                border: solid 2px #D67A13;
+                            }
+
+    
+    
+                        }
+    
+                    }
+                }
+                
+                
+            }
+    
+            
+            .btn__shop{
+                margin-top: 10px;
+                display: flex;
+                
+                width: 100%;
+                height: 40px;
+            
+    
+                button{
+                   width: 100%;
+                   
+    
+            
+                   background-color: #3A5363;
+                   color: rgb(255, 255, 255);
+                   border: none;
+                   font-size: 14px;
+                   border-radius: 4px;
+                }
+           }
+            
+        }
+    
+        .envios__Shop{
+            font-size: 13px;
+            
+            font-weight: bolder;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(225, 225, 225, 0.919);
+            text-align: start;
+            .box__ship{
+                margin: 10px;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-    
-                i{
-                    font-size: 20px;
-                }
-        
-                a{
-                     font-size: 12px;
-                     
-              }
-    
-                .starbox__product{
-                    margin-right: 20px;
-                }
-            }
-               
-    
-            }
-    }
-
-
-    .color__size__shop{
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        
-        
-
-        .colorselec__box{
-            display: flex;
-            align-items: center;
-            
-            font-size: 13px;
-
-            
-
-
-            span{
-                padding-right: 20px;
-            }
-
-        }
-
-        .imgboxselec{
-
-            margin-top: 15px;
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            img{
-                border: solid red;
-                width: 50px;
-                height: 50px;
-                margin: 0px 8px;
-                
-                
-            }
-        }
-
-        .talle__spanbox{
-            display: flex;
-            margin: 8px 0px;
-        }
-
-        .talle__shop{
-            font-size: 13px;
-            margin-top: 15px;
-        
-
-           
-
-            .talle__boxselect{
-                text-align: left;
-                
-                
-            
-
-                a{
-                    text-decoration: none;
-                    color: black;
-                }
-
-                .qt{
-                
-                           
-                    margin-top: 18px;
-                    text-decoration: underline;
-                    
-                }
-                
-                ul{
-                    display: flex;
-                   
-                    list-style: none;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    
-                    
-                    
-                    li{
-                       
-                        border: solid 2px #d6d6d6;
-                        margin-right: 5px;
-                        margin-bottom: 5px;
-                        width: 40px;
-                        height: 40px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        
-                        &:hover{
-                            border: solid 2px #D67A13;
-                        }
-
-                    }
-
-                }
-            }
-            
-            
-        }
-
-        
-        .btn__shop{
-            margin-top: 10px;
-            display: flex;
-            
-            width: 100%;
-            height: 40px;
-        
-
-            button{
-               width: 100%;
-               
-
-            //    padding: 10px 73px;
-            //    background-color: #3A5363;
-               background-color: #D67A13;
-               color: rgb(255, 255, 255);
-               border: none;
-               font-size: 14px;
-               border-radius: 4px;
-            }
-       }
-        
-    }
-
-    .envios__Shop{
-        font-size: 13px;
-        
-        font-weight: bolder;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(225, 225, 225, 0.919);
-        text-align: start;
-        .box__ship{
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            
-            
-            i{
-                font-size: 19px;
-                padding-right: 10px;
-            }
-
-            a{
-                color: black;
-                font-weight: 600;
-            }
-
-            span{
-                color: rgb(46, 46, 46);
                 font-weight: 500;
+                
+                i{
+                    font-size: 19px;
+                    padding-right: 10px;
+                }
+    
+                a{
+                    color: black;
+                    font-weight: 600;
+                }
+    
+                span{
+                    color: rgb(46, 46, 46);}
+                }
+    
+                    
             }
-        }
+                
     }
+    
+.other__product{
+    width: 100%;
+    margin-top: 20px;
+}
+    
+    
     
