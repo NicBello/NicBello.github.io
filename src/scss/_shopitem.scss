@@ -94,16 +94,14 @@
 
 
     .color__size__shop{
-        border: solid red;
         display: flex;
         flex-direction: column;
         padding: 15px;
-        
+        border: solid red;
         
 
         .colorselec__box{
             margin-bottom: 10px;
-            border: solid blue;
             display: flex;
             align-items: center;
 
@@ -133,6 +131,77 @@
                 
             }
         }
+
+        .talle__spanbox{
+            display: flex;
+            margin: 15px 0px;
+        }
+
+        .talle__shop{
+            font-size: 13px;
+           
+            margin-top: 20px;
+        
+
+           
+
+            .talle__boxselect{
+                text-align: left;
+                
+                
+            
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .qt{
+                
+                           
+                    margin-top: 15px;
+                    text-decoration: underline;
+                    
+                }
+                
+                ul{
+                    display: flex;
+                   
+                    list-style: none;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    
+                    
+                    
+                    li{
+                       
+                        border: solid 2px #d6d6d6;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        &:hover{
+                            border: solid 2px #D67A13;
+                        }
+
+                    }
+
+                }
+            }
+            
+            
+        }
+
+        .btn__shop{
+            margin-top: 20px;
+            border: solid blue;
+        }
         
         
     }
+
+    
