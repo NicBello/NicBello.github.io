@@ -17,7 +17,6 @@ body {
 }
 
 .title__producto__shop {
-  border: solid green;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -92,22 +91,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  border: solid red;
 }
 .color__size__shop .colorselec__box {
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
-}
-.color__size__shop .colorselec__box h2 {
-  font-size: 14px;
+  font-size: 13px;
 }
 .color__size__shop .colorselec__box span {
-  font-size: 14px;
-  padding: 0px 10px;
+  padding-right: 20px;
 }
 .color__size__shop .imgboxselec {
-  border: solid violet;
+  margin-top: 15px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -120,11 +114,11 @@ body {
 }
 .color__size__shop .talle__spanbox {
   display: flex;
-  margin: 15px 0px;
+  margin: 8px 0px;
 }
 .color__size__shop .talle__shop {
   font-size: 13px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .color__size__shop .talle__shop .talle__boxselect {
   text-align: left;
@@ -134,7 +128,7 @@ body {
   color: black;
 }
 .color__size__shop .talle__shop .talle__boxselect .qt {
-  margin-top: 15px;
+  margin-top: 18px;
   text-decoration: underline;
 }
 .color__size__shop .talle__shop .talle__boxselect ul {
@@ -157,8 +151,44 @@ body {
   border: solid 2px #D67A13;
 }
 .color__size__shop .btn__shop {
-  margin-top: 20px;
-  border: solid blue;
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.color__size__shop .btn__shop button {
+  width: 100%;
+  background-color: #D67A13;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.envios__Shop {
+  font-size: 13px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(225, 225, 225, 0.919);
+  text-align: start;
+}
+.envios__Shop .box__ship {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.envios__Shop .box__ship i {
+  font-size: 19px;
+  padding-right: 10px;
+}
+.envios__Shop .box__ship a {
+  color: black;
+  font-weight: 600;
+}
+.envios__Shop .box__ship span {
+  color: rgb(46, 46, 46);
+  font-weight: 500;
 }
 
 main {
