@@ -84,13 +84,13 @@ body {
   margin-right: 20px;
 }
 .title__producto__shop .description__shop {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(225, 225, 225, 0.919);
   text-align: start;
   padding: 15px;
 }
@@ -201,9 +201,13 @@ body {
   color: rgb(46, 46, 46);
 }
 
-.other__product {
+.otherproduct {
+  text-align: center;
+}
+.otherproduct .h2box {
   width: 100%;
-  margin-top: 20px;
+  font-size: 10px;
+  margin: 10px 0px;
 }
 
 main {
