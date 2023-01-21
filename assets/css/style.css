@@ -365,21 +365,37 @@ header .header__nav {
   background-color: white;
   z-index: 1;
 }
+header .header__nav .inputmenu {
+  display: none;
+}
+header .header__nav .inputmenu:checked ~ .menulist {
+  left: 0;
+}
+header .header__nav .labelmenu {
+  width: 55px;
+}
 @media (min-width: 1200px) {
   header .header__nav {
     padding: 0px 40px;
   }
 }
-header .header__nav ul {
+header .header__nav .menulist {
   list-style: none;
-  display: none;
+  position: absolute;
+  background-color: white;
+  top: 70px;
+  left: -2000px;
+  height: 100vh;
+  width: 70%;
+  padding: 20px;
+  transition: 0.5s;
 }
 @media (min-width: 1200px) {
-  header .header__nav ul {
+  header .header__nav .menulist {
     display: flex;
   }
 }
-header .header__nav ul a {
+header .header__nav .menulist a {
   text-decoration: none;
   color: black;
   padding: 20px;
