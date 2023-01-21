@@ -504,7 +504,6 @@ main .index__section__items {
 }
 main .index__section__items a {
   width: 46%;
-  max-width: 150px;
 }
 main .index__section__items a .items__tarjetas {
   width: auto;
@@ -516,6 +515,11 @@ main .index__section__items a .items__tarjetas {
   margin: 5px;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 400px) {
+  main .index__section__items a .items__tarjetas {
+    height: 240px;
+  }
 }
 @media (min-width: 600px) {
   main .index__section__items a .items__tarjetas {
