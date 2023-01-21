@@ -597,7 +597,7 @@ main .index__section__generos a {
 }
 @media (min-width: 768px) {
   main .index__section__generos {
-    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 main .index__section__generos .generos__box {
@@ -611,7 +611,8 @@ main .index__section__generos .generos__box {
 }
 @media (min-width: 768px) {
   main .index__section__generos .generos__box {
-    width: 70%;
+    width: 100%;
+    margin: 8px;
   }
 }
 main .index__section__generos img {
@@ -632,7 +633,7 @@ main .index__section__generos img:hover {
 main .index__section__generos h2 {
   color: white;
   position: absolute;
-  top: 50%;
+  top: 40%;
   font-size: 2rem;
 }
 

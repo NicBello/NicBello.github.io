@@ -153,7 +153,8 @@ main{
         }
 
         @media (min-width: 768px){
-            justify-content: center;
+            flex-wrap: nowrap;
+            
             
         }
         
@@ -168,8 +169,16 @@ main{
             justify-content: center;
             overflow: hidden;
             
+            
             @media (min-width: 768px){
-                width: 70%;
+                
+                
+            }
+
+            @media (min-width: 768px){
+                width: 100%;
+                margin: 8px;
+               
                 
             }
                 
@@ -196,7 +205,7 @@ main{
             h2{
                 color: white;
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 font-size: 2rem;
                 
                 
