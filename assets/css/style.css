@@ -504,8 +504,10 @@ main .index__section__items {
 }
 main .index__section__items a {
   width: 46%;
+  max-width: 150px;
 }
-main .index__section__items .items__tarjetas {
+main .index__section__items a .items__tarjetas {
+  width: auto;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -516,34 +518,28 @@ main .index__section__items .items__tarjetas {
   overflow: hidden;
 }
 @media (min-width: 600px) {
-  main .index__section__items .items__tarjetas {
+  main .index__section__items a .items__tarjetas {
     height: 300px;
   }
 }
-@media (min-width: 768px) {
-  main .index__section__items .items__tarjetas {
-    width: 30%;
-  }
-}
 @media (min-width: 1200px) {
-  main .index__section__items .items__tarjetas {
-    width: 15%;
+  main .index__section__items a .items__tarjetas {
     height: 250px;
   }
 }
-main .index__section__items .items__tarjetas img {
+main .index__section__items a .items__tarjetas img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-main .index__section__items .items__tarjetas img:hover {
+main .index__section__items a .items__tarjetas img:hover {
   height: 100%;
   max-width: 100%;
   transform: scale(1.15);
   transition: 0.5s;
   filter: brightness(70%);
 }
-main .index__section__items .items__tarjetas h2 {
+main .index__section__items a .items__tarjetas h2 {
   font-size: 1.2rem;
   position: absolute;
   top: 40%;

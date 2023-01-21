@@ -48,62 +48,66 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         
-        
-       a{
-        width: 46%;
-       }
-
-        .items__tarjetas{
+        a{
+            width: 46%;
+            max-width: 150px;
 
             
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            margin: 5px;
-            position: relative;
-            overflow: hidden;
-            
-            @media (min-width: 600px){
-                height: 300px;
-            }
 
-            @media (min-width: 768px){
-                width: 30%;
-            }
+            .items__tarjetas{
 
-            @media (min-width: 1200px){
-                width: 15%;
-                height: 250px;
-               
-            }
-           
-
-
-            img{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                &:hover {
-                    height: 100%;
-                    max-width: 100%;
-                    transform:scale(1.15);
-                    transition: (0.5s);
-                    filter:brightness(70%)
-                }
+                width: auto;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin: 5px;
+                position: relative;
+                overflow: hidden;
                 
-            }
-
-            h2{
-                font-size: 1.2rem;
-                position: absolute;
-                top: 40%;
-                color: white;
-                padding: 0px 5px 5px;
+                @media (min-width: 600px){
+                    height: 300px;
+                }
+    
+                @media (min-width: 768px){
+                   
+                }
+    
+                @media (min-width: 1200px){
+    
+                    height: 250px;
+                   
+                }
+               
+    
+    
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    &:hover {
+                        height: 100%;
+                        max-width: 100%;
+                        transform:scale(1.15);
+                        transition: (0.5s);
+                        filter:brightness(70%)
+                    }
+                    
+                }
+    
+                h2{
+                    font-size: 1.2rem;
+                    position: absolute;
+                    top: 40%;
+                    color: white;
+                    padding: 0px 5px 5px;
+                }
             }
         }
-    }
+        }
+
+        
 
     .index__section__generos{
         margin-top: 50px;
