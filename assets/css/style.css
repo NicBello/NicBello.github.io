@@ -516,21 +516,6 @@ main .index__section__items a .items__tarjetas {
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 400px) {
-  main .index__section__items a .items__tarjetas {
-    height: 240px;
-  }
-}
-@media (min-width: 600px) {
-  main .index__section__items a .items__tarjetas {
-    height: 300px;
-  }
-}
-@media (min-width: 1200px) {
-  main .index__section__items a .items__tarjetas {
-    height: 250px;
-  }
-}
 main .index__section__items a .items__tarjetas img {
   height: 100%;
   width: 100%;
@@ -549,6 +534,24 @@ main .index__section__items a .items__tarjetas h2 {
   top: 40%;
   color: white;
   padding: 0px 5px 5px;
+}
+@media (min-width: 400px) {
+  main .index__section__items a .items__tarjetas {
+    height: 240px;
+  }
+  main .index__section__items a .items__tarjetas h2 {
+    color: black;
+  }
+}
+@media (min-width: 600px) {
+  main .index__section__items a .items__tarjetas {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  main .index__section__items a .items__tarjetas {
+    height: 250px;
+  }
 }
 main .index__section__generos {
   margin-top: 50px;
