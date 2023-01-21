@@ -19,22 +19,22 @@ header{
         }
         
         .labelmenu{
-            width: 55px;
+            width: 65px;
             
             i{
+                
                 padding-left: 10px;
+            }
+
+            @media (min-width: 1000px){
+                display: none;
             }
         }
 
-        @media (min-width: 1200px){
-            padding: 0px 40px;
-            
-            
-        }
+
 
         .menulist{
             list-style: none;
-            // display: none;
             position: absolute;
             background-color: white;
             top: 70px;
@@ -44,25 +44,42 @@ header{
             padding: 20px;
             transition: 0.5s;
 
-            @media (min-width: 1200px){
+            @media (min-width: 1000px){
                 display: flex;
+                position: none;
+                left: 50%;
+                transform: translate(-50%);
+                top: 0px;
+                height: 70px;
+                transition: none;
+                align-items: center;
+                justify-content: center;
+                padding: 0px;
+                
+                
             }
-            
+
             a{
                 text-decoration: none;
                 color: black;
                 padding: 20px;
                 font-size: 16px;
+
+                @media (min-width: 1000px){
+                   margin: 10px;
+                    
+                    
+                }
             }
             
 
             
-            
         }
 
 
+
         i{
-            font-size: 22px;
+            font-size: 25px;
             
             @media (min-width: 480px){
                 font-size: 27px;
@@ -71,41 +88,34 @@ header{
            
         }
 
+
+
         .container__icons{
             display: none;
             justify-content: space-between;
-            width: 120px;
+            width: 118px;
 
-            @media (min-width: 1200px){
+            @media (min-width: 1000px){
                 display: flex;
+                
             }
             
 
         }
 
-        .hamburguesa{
-            width: 55px;
-            padding-left: 8px;
-
-            @media (min-width: 480px){
-                width: 70px;
-            }
-
-            @media (min-width: 1200px){
-                display: none;
-            }
-        }
+        
 
         .container__hamburguesa-lupa{
             display: flex;
             justify-content: space-between;
-            width: 55px;
+            width: 65px;
+            border: solid red;
             
             @media (min-width: 480px){
                 width: 70px;
             }
 
-            @media (min-width: 1200px){
+            @media (min-width: 1000px){
                 display: none;
             }
 
@@ -130,6 +140,8 @@ header{
             
         }
     }
+
+// ------------------------menu escritorio-----------------
     
    
     

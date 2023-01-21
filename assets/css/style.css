@@ -372,14 +372,14 @@ header .header__nav .inputmenu:checked ~ .menulist {
   left: 0;
 }
 header .header__nav .labelmenu {
-  width: 55px;
+  width: 65px;
 }
 header .header__nav .labelmenu i {
   padding-left: 10px;
 }
-@media (min-width: 1200px) {
-  header .header__nav {
-    padding: 0px 40px;
+@media (min-width: 1000px) {
+  header .header__nav .labelmenu {
+    display: none;
   }
 }
 header .header__nav .menulist {
@@ -393,9 +393,18 @@ header .header__nav .menulist {
   padding: 20px;
   transition: 0.5s;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   header .header__nav .menulist {
     display: flex;
+    position: none;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0px;
+    height: 70px;
+    transition: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
   }
 }
 header .header__nav .menulist a {
@@ -404,8 +413,13 @@ header .header__nav .menulist a {
   padding: 20px;
   font-size: 16px;
 }
+@media (min-width: 1000px) {
+  header .header__nav .menulist a {
+    margin: 10px;
+  }
+}
 header .header__nav i {
-  font-size: 22px;
+  font-size: 25px;
 }
 @media (min-width: 480px) {
   header .header__nav i {
@@ -415,38 +429,25 @@ header .header__nav i {
 header .header__nav .container__icons {
   display: none;
   justify-content: space-between;
-  width: 120px;
+  width: 118px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   header .header__nav .container__icons {
     display: flex;
-  }
-}
-header .header__nav .hamburguesa {
-  width: 55px;
-  padding-left: 8px;
-}
-@media (min-width: 480px) {
-  header .header__nav .hamburguesa {
-    width: 70px;
-  }
-}
-@media (min-width: 1200px) {
-  header .header__nav .hamburguesa {
-    display: none;
   }
 }
 header .header__nav .container__hamburguesa-lupa {
   display: flex;
   justify-content: space-between;
-  width: 55px;
+  width: 65px;
+  border: solid red;
 }
 @media (min-width: 480px) {
   header .header__nav .container__hamburguesa-lupa {
     width: 70px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   header .header__nav .container__hamburguesa-lupa {
     display: none;
   }
