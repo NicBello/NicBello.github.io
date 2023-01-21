@@ -539,9 +539,6 @@ main .index__section__items a .items__tarjetas h2 {
   main .index__section__items a .items__tarjetas {
     height: 240px;
   }
-  main .index__section__items a .items__tarjetas h2 {
-    color: black;
-  }
 }
 @media (min-width: 600px) {
   main .index__section__items a .items__tarjetas {
