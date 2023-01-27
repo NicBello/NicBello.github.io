@@ -1,5 +1,14 @@
-main{
+.main__productos{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+        
+    
+    @media (min-width: 1000px){
+        
+        
+     }
 
     .producto__main__banner{
         width: 100%;
@@ -21,6 +30,12 @@ main{
             position: absolute;
             top: 40%;
             font-size: 30px;
+
+            @media (min-width: 1000px){
+               
+                font-size: 48px;
+                
+             }
         }
 
     
@@ -30,17 +45,23 @@ main{
     }
 
     .producto__filtrarbox{
+
+        align-items: center;
         display: flex;
-        width: 52%;
-        display: flex;
+        width: 170px;
         margin-top: 20px;
         margin-left: 15px;
-        align-items: center;
+        
         background-color: #ffffff;
         border: solid 2px #000000;
         
-        
-        
+
+        @media (min-width: 1000px){
+               
+           display: none;
+           
+           
+        }
 
         i{
        
@@ -63,11 +84,132 @@ main{
 
     }
 
+    .producto__filtrarboxdeskop{
+        font-family: monserrat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+
+        @media (min-width: 1000px){
+            margin-top: 15px;
+            width: 25%;
+            height: 800px;
+            display: flex;
+           
+        }
+
+
+
+        .filtrarbox{
+            display: flex;
+            flex-direction: column;
+            width: 93%;
+            height: auto;
+            font-size: 15px;
+
+           span{
+            
+            margin-top: 10px;
+            font-weight: 600;
+           }
+
+            select{
+                
+                
+                width: 130px;
+                height: 35px;
+                border: solid 1px black;
+                margin-top: 5px;
+            }
+
+
+        }
+        
+        .categories{
+            margin-top: 20px;
+            width: 93%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            border-top: solid rgb(131, 131, 131) 1px;
+            padding-top: 15px;
+
+            span{
+                font-weight: 600;
+                margin-bottom: 10px;
+                
+            }
+
+            div{
+                display: flex;
+                align-items: center;
+                margin: 5px;
+                
+                label{
+                    margin-left: 5px;
+                
+                }
+            }
+            
+            .selec__actividad__filtro{
+                
+                cursor: pointer;
+                background-color: #fff;
+                background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+                width: 18px;
+                height: 18px;
+                appearance: none;
+                border: 2px solid #3A5363;
+
+                // Animaciones
+                transition: background-color 0.3s ease-in-out;
+
+                &:checked{
+                    background-color:#3A5363;
+                  }
+
+                &:focus {
+                    border-color:#3A5363
+                   
+                  } 
+
+                &:disabled {
+                    background-color: rgb(0, 255, 55);
+                    background-image: none;
+                    
+                  } 
+
+                &:disabled:checked {
+                    background-color: rgb(198, 198, 198);
+                    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+                  }   
+                  
+            }
+                
+            .bordergray{
+                border-top: solid rgb(131, 131, 131) 1px;
+                padding-top: 15px;
+                margin-top: 15px;
+            }
+            
+        }
+
+    }
     .producto__order{
         height: auto;
         padding: 10px;
         display: flex;
         flex-wrap: wrap;
+       
+        @media (min-width: 1000px){
+               
+            width: 75%;
+            
+        }
+        
+        
+
         .tarjeta__item{
             width: 46%;
             height: auto;
@@ -77,6 +219,12 @@ main{
             font-size: 13px;
             border: 1px solid lightgray;
             box-shadow: 0 0.2rem 0.4rem 0 rgb(50 50 51 / 40%);
+
+            @media (min-width: 560px){
+               
+                width: 31%;
+               
+            }
 
             .centerbox{
                
@@ -126,13 +274,15 @@ main{
     }
 
     .container__nextpages{
+        
         border: solid 1px black;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 80%;
+        
+        width: 256px;
         font-size: 12px;
-        align-self: center;
+        margin-top: 30px;
+        margin: auto;
         
         .margin-right{
            border-right: solid black 1px;
