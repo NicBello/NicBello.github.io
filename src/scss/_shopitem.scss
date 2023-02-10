@@ -5,7 +5,7 @@
     align-items: flex-start;
     
         h1{
-            font-size: 22px;
+            font-size: 30px;
             padding: 14px;
             align-self: center;
 
@@ -20,7 +20,9 @@
     
         .img__box__shop{
             width: 100%;
-            height: 320;
+            height: 320px;
+          
+            
             img{
                 width: 100%;
                 height: 100%;
@@ -43,7 +45,7 @@
                 font-size: 18px;
                 padding: 6px 20px;
                 background-color: #D67A13;
-                width: 25%;
+                max-width: 70px;
                 border-radius: 3px;
                 color: rgb(241, 241, 241);
             }
@@ -122,29 +124,31 @@
 
                 span{
                     padding-right: 20px;
+                    font-weight: 600;
                 }
     
             }
     
             .imgboxselec{
-    
+                
                 margin-top: 15px;
                 display: flex;
-                width: 100%;
+                max-width: 290px;
                 justify-content: center;
 
                 img{
-                    border: solid red;
+                    
                     width: 50px;
                     height: 50px;
                     margin: 0px 8px;
-                    
+                    object-fit: cover;
                 }
             }
     
             .talle__spanbox{
                 display: flex;
                 margin: 8px 0px;
+                font-weight: 600;
             }
     
             .talle__shop{
@@ -226,7 +230,7 @@
     
         .envios__Shop{
             font-size: 13px;
-            
+            width: 100%;
             font-weight: bolder;
             display: flex;
             flex-direction: column;
@@ -258,15 +262,97 @@
     }
     
 .otherproduct{
-    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+        a{
+            width: 46%;
+            height: auto;
+            margin: 6px;
+            border: 1px solid lightgray;
+            box-shadow: 0 0.2rem 0.4rem 0 rgb(50 50 51 / 40%);
+            text-decoration: none;
+            color: black;
+            
+
+            @media (min-width: 480px){
+                max-height: 380px;
+                max-width: 210px;
+                margin: 10px
+            }
+            .centerbox{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                
+                
+                    h3{ 
+                        font-size: 13px;
+                        margin-bottom: 4px;
+                    }
+                    
+                    .product__name{
+                        font-size: 12px;
+                        color: rgb(103, 103, 103);
+                        margin-bottom: 5px;
+                        height: 37.5px;
+                        display: flex;
+                        
+                    }
+
+                    .price{
+                        font-size: 12px;
+                        width: 50%;
+                        text-align: center;
+                        border-radius: 3px;
+                        padding: 4px 0px;
+                        color: rgb(255, 255, 255);
+                        background-color: #d99546;
+                        margin-bottom: 5px;
+
+    
+                    }
+
+                        .btn{
+
+                        margin: 3px 0px;
+                        background-color: #3A5363;
+                        padding: 5px;
+                        border: none;
+                        color: white;
+                        font-size: 12px;
+                        border-radius: 3px;
+                        
+                        @media (min-width: 1000px){
+                            
+                            padding: 7px;
+                            font-size: 15px;
+                            
+                        }
+                    }
+                    
+                    
+            }
+              img{
+            width: 100%;
+            height: 55%;
+            object-fit: cover;
+            }
+        }
+
+      
     .h2box{
             
             width: 100%;
             font-size: 10px;
             margin: 10px 0px;
     }
-    
-
 }
     
     
