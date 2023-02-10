@@ -14,8 +14,10 @@
 <body>
     <header>
         <nav class="header__nav">
-            <label class="labelmenu" for="hamburguesa"> <i class="fa-solid fa-bars"></i> </label>
-            <input id="hamburguesa" class="inputmenu" type="checkbox">
+           
+                <label class="labelmenu" for="hamburguesa"> <i class="fa-solid fa-bars"></i> </label>
+                <input id="hamburguesa" class="inputmenu" type="checkbox">
+            
 
             <div class="nav__logobox">
                 <a href="/index.html"><img src="/assets/img/LOGO.png" alt=""></a>
@@ -23,10 +25,12 @@
 
             <ul class="menulist">
                 <a href="/index.html"><li>INICIO</li></a>
-                <a href="/pages/productos.html"><li>PRODUCTOS</li></a>
+                <a href="/pages/productomujer.html"><li>PRODUCTOS</li></a>
                 <a href=""><li>OUTLET</li></a>
                 <a href=""><li>CONTACTO</li></a>
             </ul>
+
+    
 
             <div class="container__icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -46,7 +50,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main__productos">
         <section class="producto__main__banner">
             <img src="/assets/img/hombre.jpg" alt="">
             <h3>HOMBRE</h3>
@@ -61,85 +65,218 @@
             <button>Ordenar y filtrar</button>
         </div>
 
+        <section class="producto__filtrarboxdeskop">  
+            <div class="filtrarbox">
+                <span>ORDENAR POR:</span>
+            
+                <select name="" id="">
+                    <option value="">AUTOMATICO</option>
+                    <option value="">Precio mas bajo</option>
+                    <option value="">Precio mas alto</option>
+                </select>
+
+            </div>
+            <div class="categories">
+                <span>ACTIVIDADES</span>
+                <div>
+                    <input class="selec__actividad__filtro" id="running" type="checkbox">
+                    <label  for="running">Running</label>
+                </div>
+                
+                <div>
+                    <input class="selec__actividad__filtro" id="CP" type="checkbox">
+                    <label for="CP">Camping</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <span class="bordergray">TALLE (ADULTOS)</span>
+                
+                <div>
+                    <input class="selec__actividad__filtro" id="CP" type="checkbox">
+                    <label for="CP">Camping</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+                
+                <span class="bordergray">CARACTERÍSTICAS</span>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+
+            </div>
+        </section>
+
         <section class="producto__order">  
 
-            <div class="tarjeta__item">
+            <a href="/pages/shopitem.html">
+             <div class="tarjeta__item"> 
                 <div class="imgbox__item">
-                    <a href="/pages/shopitem.html"><img src="/assets/img/item-hombre/bermuda-de-hombre-katmandu.jpg" alt=""></a>
+                     <img src="/assets/img/item-hombre/bermuda-de-hombre-katmandu.jpg" alt="">
                 </div>
+                
 
                 <div class="centerbox">
                     <h3>KATMANDU</h3>
-                    <p>Bermuda corta de hombre</p>
+                    <p class="product__name">Bermuda corta de hombre</p>
                     <p class="price">$14.000</p>
                     <button class="btn carrito">Agregar al carrito</button>
                 </div>
-            </div> 
+             </div>
+            </a> 
 
-            <div class="tarjeta__item">
-                <div class="imgbox__item">
-                    <img src="/assets/img/item-hombre/botas-de-hombre-ultra-venture.jpg" alt="">
-                </div>
+            <a href="/pages/shopitem.html">
 
-                <div class="centerbox">
-                    <h3>ULTRA VENTURE</h3>
-                    <p>Botas de montaña de hombre</p>
-                    <p class="price">$12.000</p>
-                    <button class="btn carrito">Agregar al carrito</button>
+                <div class="tarjeta__item">
+                    <div class="imgbox__item">
+                        <img src="/assets/img/item-hombre/botas-de-hombre-ultra-venture.jpg" alt="">
+                    </div>
+    
+                    <div class="centerbox">
+                        <h3>ULTRA VENTURE</h3>
+                        <p class="product__name">Botas de montaña de hombre</p>
+                        <p class="price">$12.000</p>
+                        <button class="btn carrito">Agregar al carrito</button>
+                    </div>
                 </div>
-            </div> 
+            </a>
+            
+             
+            <a href="/pages/shopitem.html">
 
-            <div class="tarjeta__item">
-                <div class="imgbox__item">
-                    <img src="/assets/img/item-hombre/camisa-de-hombre-bolt.jpg" alt="">
-                </div>
+                <div class="tarjeta__item">
+                    <div class="imgbox__item">
+                        <img src="/assets/img/item-hombre/camisa-de-hombre-bolt.jpg" alt="">
+                    </div>
+    
+                    <div class="centerbox">
+                        <h3>BOLT</h3>
+                        <p class="product__name">Camisa de hombre</p>
+                        <p class="price">$19.000</p>
+                        <button class="btn carrito">Agregar al carrito</button>
+                    </div>
+                </div> 
+            </a>  
+            
 
-                <div class="centerbox">
-                    <h3>BOLT</h3>
-                    <p>Camisa de hombre</p>
-                    <p class="price">$19.000</p>
-                    <button class="btn carrito">Agregar al carrito</button>
-                </div>
-            </div> 
+            <a href="/pages/shopitem.html">
 
-            <div class="tarjeta__item">
-                <div class="imgbox__item">
-                    <img src="/assets/img/item-hombre/campera-de-hombre-chamber.jpg" alt="">
-                </div>
+                <div class="tarjeta__item">
+                    <div class="imgbox__item">
+                        <img src="/assets/img/item-hombre/campera-de-hombre-chamber.jpg" alt="">
+                    </div>
+    
+                    <div class="centerbox">
+                        <h3>CHAMBER</h3>
+                        <p class="product__name">Campera de hombre</p>
+                        <p class="price">$22.000</p>
+                        <button class="btn carrito">Agregar al carrito</button>
+                    </div>
+                </div> 
+            </a>
+            
+            <a href="/pages/shopitem.html">
 
-                <div class="centerbox">
-                    <h3>CHAMBER</h3>
-                    <p>Campera de hombre</p>
-                    <p class="price">$22.000</p>
-                    <button class="btn carrito">Agregar al carrito</button>
-                </div>
-            </div> 
+                <div class="tarjeta__item">
+                    <div class="imgbox__item">
+                        <img src="/assets/img/item-hombre/campera-de-hombre-de-micro-polar-conor.jpg" alt="">
+                    </div>
+    
+                    <div class="centerbox">
+                        <h3>CONOR</h3>
+                        <p class="product__name">Campera de hombre</p>
+                        <p class="price">$30.000</p>
+                        <button class="btn carrito">Agregar al carrito</button>
+                    </div>
+                 </div>  
+            </a>
+              
 
-            <div class="tarjeta__item">
-                <div class="imgbox__item">
-                    <img src="/assets/img/item-hombre/campera-de-hombre-de-micro-polar-conor.jpg" alt="">
-                </div>
+            <a href="/pages/shopitem.html">
 
-                <div class="centerbox">
-                    <h3>CONOR</h3>
-                    <p>Campera de hombre</p>
-                    <p class="price">$30.000</p>
-                    <button class="btn carrito">Agregar al carrito</button>
-                </div>
-            </div>    
-
-            <div class="tarjeta__item">
-                <div class="imgbox__item">
-                    <img src="/assets/img//item-hombre/chaleco-de-hombre-eiger.jpg" alt="">
-                </div>
-
-                <div class="centerbox">
-                    <h3>EIGER</h3>
-                    <p>Chaleco de hombre</p>
-                    <p class="price">$14.000</p>
-                    <button class="btn carrito">Agregar al carrito</button>
-                </div>
-            </div>       
+                <div class="tarjeta__item">
+                    <div class="imgbox__item">
+                        <img src="/assets/img//item-hombre/chaleco-de-hombre-eiger.jpg" alt="">
+                    </div>
+    
+                    <div class="centerbox">
+                        <h3>EIGER</h3>
+                        <p class="product__name">Chaleco de hombre</p>
+                        <p class="price">$14.000</p>
+                        <button class="btn carrito">Agregar al carrito</button>
+                    </div>
+                </div> 
+            </a> 
+                   
             
         </section> 
 

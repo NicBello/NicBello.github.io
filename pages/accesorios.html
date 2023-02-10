@@ -12,18 +12,17 @@
     <title>Productos</title>
 </head>
 <body>
+    
     <header>
         <nav class="header__nav">
-            <div class="hamburguesa">
-                <i class="fa-solid fa-bars"></i> 
-                
-            </div>
+             <label class="labelmenu" for="hamburguesa"> <i class="fa-solid fa-bars"></i> </label>
+                <input id="hamburguesa" class="inputmenu" type="checkbox">
 
             <div class="nav__logobox">
                 <a href="/index.html"><img src="/assets/img/LOGO.png" alt=""></a>
             </div>
 
-            <ul>
+            <ul class="menulist">
                 <a href="/index.html"><li>INICIO</li></a>
                 <a href="/pages/productos.html"><li>PRODUCTOS</li></a>
                 <a href=""><li>OUTLET</li></a>
@@ -48,7 +47,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main__productos">
         <section class="producto__main__banner">
             <img src="/assets/img/accesorios.jpeg" alt="">
             <h3>ACCESORIOS</h3>
@@ -62,6 +61,119 @@
             
             <button>Ordenar y filtrar</button>
         </div>
+
+        <section class="producto__filtrarboxdeskop">  
+            <div class="filtrarbox">
+                <span>ORDENAR POR:</span>
+            
+                <select name="" id="">
+                    <option value="">AUTOMATICO</option>
+                    <option value="">Precio mas bajo</option>
+                    <option value="">Precio mas alto</option>
+                </select>
+
+            </div>
+            <div class="categories">
+                <span>ACTIVIDADES</span>
+                <div>
+                    <input class="selec__actividad__filtro" id="running" type="checkbox">
+                    <label  for="running">Running</label>
+                </div>
+                
+                <div>
+                    <input class="selec__actividad__filtro" id="CP" type="checkbox">
+                    <label for="CP">Camping</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <span class="bordergray">TALLE (ADULTOS)</span>
+                
+                <div>
+                    <input class="selec__actividad__filtro" id="CP" type="checkbox">
+                    <label for="CP">Camping</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+                
+                <span class="bordergray">CARACTERÍSTICAS</span>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+                <div>
+                    <input class="selec__actividad__filtro" id="BPM" type="checkbox">
+                    <label for="BPM">Boludear por la montaña</label>
+                </div>
+
+
+            </div>
+        </section>
+
+        
 
         <section class="producto__order">  
 
@@ -145,6 +257,7 @@
             
         </section> 
 
+        
         <section class="container__nextpages">
             <div class="margin-right">
                 <p>Anterior</p>

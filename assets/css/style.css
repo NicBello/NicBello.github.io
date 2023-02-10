@@ -360,49 +360,76 @@ body {
     width: 75%;
   }
 }
-.main__productos .producto__order .tarjeta__item {
+.main__productos .producto__order a {
   width: 46%;
   height: auto;
   display: flex;
   flex-direction: column;
   margin: 6px;
-  font-size: 13px;
   border: 1px solid lightgray;
   box-shadow: 0 0.2rem 0.4rem 0 rgba(50, 50, 51, 0.4);
+  text-decoration: none;
+  color: black;
 }
-@media (min-width: 560px) {
-  .main__productos .producto__order .tarjeta__item {
-    width: 31%;
+@media (min-width: 480px) {
+  .main__productos .producto__order a {
+    margin: 10px auto;
   }
 }
-.main__productos .producto__order .tarjeta__item .centerbox {
+@media (min-width: 550px) {
+  .main__productos .producto__order a {
+    width: 30%;
+  }
+}
+@media (min-width: 1000px) {
+  .main__productos .producto__order a {
+    width: 28%;
+    margin: 15px auto;
+  }
+}
+.main__productos .producto__order a .centerbox {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 8px;
 }
-.main__productos .producto__order .tarjeta__item .centerbox h3 {
-  font-size: 13px;
-  padding: 3px 0px;
+.main__productos .producto__order a .centerbox h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
 }
-.main__productos .producto__order .tarjeta__item .centerbox p {
-  font-size: 12px;
+.main__productos .producto__order a .centerbox .product__name {
+  font-size: 13.5px;
   color: rgb(103, 103, 103);
+  margin-bottom: 5px;
+  height: 37.5px;
 }
-.main__productos .producto__order .tarjeta__item .centerbox .price {
-  font-size: 13px;
-  padding: 3px 0px;
-  color: black;
+.main__productos .producto__order a .centerbox .price {
+  font-size: 0.9rem;
+  width: 50%;
+  text-align: center;
+  border-radius: 3px;
+  padding: 4px 0px;
+  color: rgb(0, 0, 0);
+  background-color: #d99546;
+  margin-bottom: 5px;
 }
-.main__productos .producto__order .tarjeta__item .centerbox .btn {
+.main__productos .producto__order a .centerbox .btn {
   margin: 3px 0px;
   background-color: #3A5363;
   padding: 5px;
   border: none;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 3px;
 }
-.main__productos .producto__order .tarjeta__item img {
+@media (min-width: 1000px) {
+  .main__productos .producto__order a .centerbox .btn {
+    padding: 7px;
+    font-size: 15px;
+  }
+}
+.main__productos .producto__order img {
   width: 100%;
   height: auto;
   object-fit: contain;
